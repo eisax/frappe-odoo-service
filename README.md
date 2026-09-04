@@ -19,7 +19,7 @@ A standalone, high-performance Python microservice for synchronizing data **one-
 
 ```bash
 # Clone or navigate to service directory
-cd /Users/josphatndhlovu/Documents/WORK/Showline/SERVICE/frappe-odoo-service
+cd /Users/yourpc/Documents/WORK/Showline/SERVICE/frappe-odoo-service
 
 # Install package in editable mode (or inside virtualenv)
 pip install -e .
@@ -27,7 +27,7 @@ pip install -e .
 
 If using `frappe-bench` Python environment:
 ```bash
-/Users/josphatndhlovu/frappe-bench/env/bin/pip install -e .
+/Users/yourpc/frappe-bench/env/bin/pip install -e .
 ```
 
 ---
@@ -70,17 +70,17 @@ tenants:
 
 #### Way 1: Direct Python Module (Recommended - No PATH setup required)
 ```bash
-PYTHONPATH=src /Users/josphatndhlovu/frappe-bench/env/bin/python3 -m frappe_odoo_service.cli -c config.yaml sync
+PYTHONPATH=src /Users/yourpc/frappe-bench/env/bin/python3 -m frappe_odoo_service.cli -c config.yaml sync
 ```
 
 #### Way 2: Virtualenv Binary
 ```bash
-/Users/josphatndhlovu/frappe-bench/env/bin/frappe-odoo-sync -c config.yaml sync
+/Users/yourpc/frappe-bench/env/bin/frappe-odoo-sync -c config.yaml sync
 ```
 
 #### Way 3: Export PATH (optional for `frappe-odoo-sync` command)
 ```bash
-export PATH="/Users/josphatndhlovu/frappe-bench/env/bin:$PATH"
+export PATH="/Users/yourpc/frappe-bench/env/bin:$PATH"
 frappe-odoo-sync -c config.yaml sync
 ```
 
@@ -132,7 +132,7 @@ PYTHONPATH=src python3 -m unittest discover -s tests
 ```
 Or with frappe-bench python env:
 ```bash
-PYTHONPATH=src /Users/josphatndhlovu/frappe-bench/env/bin/python3 -m unittest discover -s tests
+PYTHONPATH=src /Users/yourpc/frappe-bench/env/bin/python3 -m unittest discover -s tests
 ```
 # frappe-odoo-service
 # frappe-odoo-service
