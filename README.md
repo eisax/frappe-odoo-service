@@ -45,22 +45,22 @@ sync_engine:
   log_level: "INFO"
 
 tenants:
-  - tenant_id: "erp34_to_saas"
+  - tenant_id: "your_tenant_id"
     enabled: true
     frappe:
-      base_url: "https://erp34.havano.cloud"
-      username: "shurugwi1@lowbic.com"
-      password: "shurugwi@123"
+      base_url: "https://your-frappe-site.example.com"
+      username: "your-frappe-user@example.com"
+      password: "YOUR_FRAPPE_PASSWORD"
       # Or specify api_key and api_secret:
       # api_key: "YOUR_API_KEY"
       # api_secret: "YOUR_API_SECRET"
       use_havano_api: true
       use_saas_api: true
     odoo:
-      url: "https://backoffice.havano.pro"
-      db: "saas"
-      username: "nijotest@gmail.com"
-      password: "Pass@123"
+      url: "https://your-odoo-instance.example.com"
+      db: "your_odoo_db"
+      username: "your-odoo-user@example.com"
+      password: "YOUR_ODOO_PASSWORD"
       protocol: "xmlrpc"
 ```
 
