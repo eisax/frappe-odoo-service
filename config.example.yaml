@@ -1,0 +1,20 @@
+version: "1.0"
+sync_engine:
+  poll_interval_seconds: 300
+  state_db_path: "sync_state.db"
+  batch_size: 50
+  log_level: "INFO"
+
+tenants:
+  - tenant_id: "default"
+    enabled: true
+    frappe:
+      base_url: "http://localhost:8000"
+      api_key: "YOUR_FRAPPE_API_KEY"
+      api_secret: "YOUR_FRAPPE_API_SECRET"
+    odoo:
+      url: "http://localhost:8069"
+      db: "odoo_db"
+      username: "admin"
+      password: "password"
+      protocol: "xmlrpc"
