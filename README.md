@@ -4,7 +4,7 @@ A standalone, high-performance Python microservice for synchronizing data **one-
 
 ---
 
-## 🌟 Key Highlights
+## Key Highlights
 - **One-Way Sync**: Strictly fetches from Frappe and writes to Odoo. No mutations on Frappe.
 - **Zero Code Modification**: Requires **no changes** to Frappe apps (`saas_api`, `havano_pos_integration`, `erpnext`) or Odoo modules (`havanoposdesk_odoo`).
 - **Multi-Tenant Ready**: Configure multiple site/database pairs without any hardcoded URLs or credentials.
@@ -13,7 +13,7 @@ A standalone, high-performance Python microservice for synchronizing data **one-
 
 ---
 
-## 🚀 Quick Start Guide
+## Quick Start Guide
 
 ### 1. Installation
 
@@ -124,7 +124,7 @@ frappe-odoo-sync -c config.yaml daemon
 
 ---
 
-## 🧪 Running Unit Tests
+## Running Unit Tests
 
 Run the automated test suite:
 ```bash
